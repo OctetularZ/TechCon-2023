@@ -259,3 +259,21 @@ html {
   margin-bottom: 200px;
   margin-left: 0px;
 }
+
+.spacer {
+  width: 100%;
+  background: none;
+}
+
+.layer1 {
+  margin-top: -150px;
+  z-index: 3;
+  position: relative;
+}
+
+.layer1-reverse {
+  margin-top: 50px;
+  position: relative;
+  transform: rotateX(180deg);
+  margin: -5px 0;
+}
