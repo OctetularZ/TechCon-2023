@@ -236,3 +236,26 @@ html {
 .home-link:hover:after {
   width: 100%;
 }
+
+.hero-left {
+  margin-top: 25vh;
+  margin-left: 100px;
+  max-width: 450px;
+}
+
+.hero-title {
+  font-family: Poppins;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hero-description {
+  margin: 15px 0px;
+  font-family: Poppins;
+  color: white;
+}
+
+.hero-btn {
+  margin-bottom: 200px;
+  margin-left: 0px;
+}
