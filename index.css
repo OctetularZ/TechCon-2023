@@ -151,12 +151,12 @@ html {
   color: white;
   font-family: lemon;
   margin-left: 5vw;
-  margin-right: 35vw;
+  margin-right: 32vw;
   white-space: nowrap;
   margin-top: 1vh;
   font-size: 25px;
-  border-radius: 5px;
-  padding: 0 5px;
+  border-radius: 10px;
+  padding: 5px 15px;
   transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
   transform: translateZ(0);
   animation: slideInFromTop 0.8s ease;
@@ -189,7 +189,7 @@ html {
   border-style: none;
   padding: 10px 20px;
   margin-left: -10px;
-  margin-top: 1vh;
+  margin-top: 5px;
   color: white;
   font-family: lemon;
   transition: all 0.3s ease;
