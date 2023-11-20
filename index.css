@@ -245,8 +245,7 @@ html {
 }
 
 .hero-title {
-  font-family: Poppins;
-  text-transform: uppercase;
+  font-family: lemon;
   color: white;
 }
 
@@ -277,4 +276,36 @@ html {
   position: relative;
   transform: rotateX(180deg);
   margin: -5px 0;
+}
+
+.conference-img {
+  width: 600px;
+  height: 300px;
+}
+
+.image-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 100px;
+  align-items: center;
+  margin-top: -100px;
+  padding-bottom: 200px;
+}
+
+.middle-text-container {
+  max-width: 400px;
+}
+
+.middle-text-container h3 {
+  color: white;
+  font-family: lemon;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.middle-text-container p {
+  color: white;
+  font-family: Poppins;
+  font-size: 18px;
 }
