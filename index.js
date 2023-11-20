@@ -1,5 +1,9 @@
 import Lenis from '@studio-freight/lenis'
 
+
+
+
+// Lenis - Enables Smooth Scrolling
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
