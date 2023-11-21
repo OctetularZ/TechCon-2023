@@ -124,13 +124,6 @@ html {
   box-shadow: 0px -2px 15px black;
 }
 
-.bottom {
-  width: 100%;
-  background-color: #23272a;
-  position: relative;
-  box-shadow: 0px -2px 15px black;
-}
-
 .nav-options {
   text-decoration: none;
   list-style: none;
@@ -282,6 +275,7 @@ html {
   width: 650px;
   height: 350px;
   border-radius: 25px;
+  box-shadow: 0px 0px 20px 0px black;
 }
 
 .image-text-container {
@@ -307,9 +301,8 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0px 110px;
+  margin: 0px 100px;
   align-items: center;
-  padding-bottom: 200px;
   margin-top: 250px;
   opacity: 0;
 }
@@ -336,4 +329,23 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.final-call {
+  margin-top: 150px;
+  margin-left: 35vw;
+  display: flex;
+  flex-direction: row;
+  opacity: 0;
+}
+
+.final-call h3 {
+  color: white;
+  font-family: lemon;
+  font-size: 18px;
+  margin-right: 30px;
+}
+
+.final-call button {
+  margin-top: -10px;
 }

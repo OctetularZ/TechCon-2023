@@ -17,7 +17,7 @@ let middleSection = gsap.timeline({
   scrollTrigger: {
     trigger: '.image-text-container',
     start: '-180% 70%',
-    end: '200% 40%',
+    end: '380% 40%',
     toggleActions: 'restart restart none none',
     scrub: true,
     markers: true
@@ -36,6 +36,11 @@ middleSection.to('.image-text-container-2', {
 
 middleSection.to('.image-text-container-3', {
   y: -350,
+  opacity: 1
+})
+
+middleSection.to('.final-call', {
+  y: -150,
   opacity: 1
 })
 
