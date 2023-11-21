@@ -15,8 +15,8 @@ requestAnimationFrame(raf)
 let tl = gsap.timeline({
   scrollTrigger: {
     trigger: '.image-text-container',
-    start: '-150% 80%',
-    end: '-75% center',
+    start: '-150% 70%',
+    end: '-75% 40%',
     toggleActions: 'restart restart none none',
     scrub: true,
     markers: true
