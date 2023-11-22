@@ -45,7 +45,7 @@ middleSection.to('.final-call', {
   opacity: 1
 })
 
-// When the user scrolls the page, execute myFunction
+// When the user scrolls the page, execute stickNavbar
 window.onscroll = function () {
   stickNavbar()
 };
