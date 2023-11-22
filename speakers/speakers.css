@@ -1,0 +1,231 @@
+@font-face {
+  font-family: lemon;
+  src: url(../lemon_milk/LEMONMILK-Regular.otf);
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Source Code Pro;
+  src: url(../Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromFarLeft {
+  0% {
+    transform: translateX(-250%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-150%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromFarTop {
+  0% {
+    transform: translateY(-250%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+html {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #23272a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.outer-div {
+  width: 100%;
+  height: 100vh;
+}
+
+.BG {
+  width: 100%;
+  background-color: #23272a;
+  position: relative;
+}
+
+.nav-options {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  background-color: #23272a;
+  position: relative;
+  z-index: 5;
+  animation: slideInFromTop 0.8s ease;
+  border-bottom: 2px solid white;
+  box-shadow: 0px 3px 10px 0px black;
+}
+
+.name-title {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family: lemon;
+  margin-left: 5vw;
+  margin-right: 32vw;
+  white-space: nowrap;
+  margin-top: 1vh;
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 5px 15px;
+  transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+  transform: translateZ(0);
+  animation: slideInFromTop 0.8s ease;
+}
+
+.name-title:hover {
+  box-shadow: inset 250px 0 0 0 #ffffff;
+  color: black;
+}
+
+.nav-li {
+  margin: 0px 10px;
+  padding: 0px 30px;
+  transition: 1s all ease;
+}
+
+.home-btn {
+  background-color: transparent;
+  border-style: none;
+  padding: 10px 0px;
+  margin-top: 1vh;
+  color: white;
+  font-family: lemon;
+}
+
+.call-btn {
+  background-color: white;
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px 20px;
+  margin-left: -10px;
+  margin-top: 5px;
+  color: white;
+  font-family: lemon;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.call-btn:hover {
+  background-color: #000;
+  border: 2px solid white;
+}
+
+.home-link {
+  text-decoration: none;
+  color: #edeade;
+}
+
+.call-link {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.call-btn:hover .call-link {
+  color: white;
+}
+
+.home-link::after {
+  content: "";
+  display: block;
+  margin: left;
+  background-color: #ffffff;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.home-link:hover {
+  color: #ffffff;
+}
+
+.home-link:hover:after {
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add fake horiontal scroll thing with images and descriptions of speakers using GSAP (and snap scrolling?) */
