@@ -115,6 +115,9 @@ html {
   width: 100%;
   background-color: #23272a;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav-options {
@@ -227,4 +230,39 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.table-container {
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  font-family: lemon;
+  color: black;
+}
+
+td {
+  font-family: Poppins;
+  color: #fff;
+}
+
+tr {
+  background-color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #000;
 }
