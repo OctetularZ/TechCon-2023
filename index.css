@@ -153,7 +153,6 @@ html {
   transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
   transform: translateZ(0);
   animation: slideInFromTop 0.8s ease;
-  text-decoration: underline;
 }
 
 .name-title:hover {

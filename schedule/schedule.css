@@ -149,7 +149,6 @@ html {
   transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
   transform: translateZ(0);
   animation: slideInFromTop 0.8s ease;
-  text-decoration: underline;
 }
 
 .name-title:hover {
@@ -232,9 +231,22 @@ html {
   width: 100%;
 }
 
+.logo {
+  width: 90px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.table-title {
+  color: white;
+  font-family: lemon;
+  text-decoration: underline;
+}
+
 .table-container {
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 
 table {
@@ -246,7 +258,8 @@ th,
 td {
   border: 1px solid #dddddd;
   text-align: left;
-  padding: 8px;
+  padding: 8px 10px;
+  text-transform: capitalize;
 }
 
 th {
@@ -265,4 +278,12 @@ tr {
 
 tr:nth-child(even) {
   background-color: #000;
+}
+
+tr:nth-child(even)+td {
+  color: #000;
+}
+
+.inverse-colour {
+  color: #000;
 }
