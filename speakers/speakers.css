@@ -109,7 +109,7 @@ html {
   width: 100%;
   background-color: #23272a;
   position: relative;
-  height: 100vh;
+  height: 553vh;
   overflow-x: hidden;
 }
 
@@ -280,4 +280,9 @@ p {
   font-family: Poppins;
 }
 
-/* Add fake horiontal scroll thing with images and descriptions of speakers using GSAP (and snap scrolling?) */
+.svg-element {
+  width: 90%;
+  position: relative;
+  margin-left: 5%;
+  margin-top: 10%;
+}

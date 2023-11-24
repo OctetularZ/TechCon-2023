@@ -26,8 +26,7 @@ let tl = gsap.timeline({
     trigger: slider,
     pin: true,
     scrub: 2,
-    end: () => "+=" + slider.offsetWidth,
-    markers: true
+    end: () => "+=" + slider.offsetWidth
   }
 })
 
@@ -43,10 +42,20 @@ sections.forEach((stop, index) => {
     opacity: 0,
     scrollTrigger: {
       trigger: stop.querySelector('.content'),
-      start: 'left center',
-      end: 'cetner center',
+      start: '-600px center',
+      end: '-100px center',
       containerAnimation: tl,
       scrub: true
+    }
+  })
+  tl.from(stop.querySelector('img'), {
+    xPercent: 40,
+    yPercent: -100,
+    ease: 'elastic.out(1,1)',
+    scrollTrigger: {
+      trigger: stop.querySelector('img'),
+      scrub: 2,
+      containerAnimation: tl
     }
   })
 })
