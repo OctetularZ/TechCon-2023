@@ -16,6 +16,7 @@ requestAnimationFrame(raf)
 //gsap fake horizontal scroll effect
 
 let slider = document.querySelector('.slider')
+let BG = document.querySelector('.BG')
 let sections = gsap.utils.toArray('.slider section')
 
 let tl = gsap.timeline({
@@ -23,7 +24,7 @@ let tl = gsap.timeline({
     ease: 'none'
   },
   scrollTrigger: {
-    trigger: slider,
+    trigger: BG,
     pin: true,
     scrub: 2,
     end: () => "+=" + slider.offsetWidth
@@ -32,7 +33,7 @@ let tl = gsap.timeline({
 
 //Changes how far to the right you can scroll
 tl.to(slider, {
-  xPercent: -81
+  xPercent: -66.3
 })
 
 

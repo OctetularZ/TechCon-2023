@@ -109,7 +109,7 @@ html {
   width: 100%;
   background-color: #23272a;
   position: relative;
-  height: 553vh;
+  height: 100vh;
   overflow-x: hidden;
 }
 
@@ -284,5 +284,5 @@ p {
   width: 90%;
   position: relative;
   margin-left: 5%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
