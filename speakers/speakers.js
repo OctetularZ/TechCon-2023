@@ -33,7 +33,7 @@ let tl = gsap.timeline({
 
 //Changes how far to the right you can scroll
 tl.to(slider, {
-  xPercent: -66.3
+  xPercent: -66.7
 })
 
 
@@ -43,10 +43,11 @@ sections.forEach((stop, index) => {
     opacity: 0,
     scrollTrigger: {
       trigger: stop.querySelector('.content'),
-      start: '-600px center',
-      end: '-100px center',
+      start: '-500px center',
+      end: '550px center',
       containerAnimation: tl,
-      scrub: true
+      scrub: true,
+      markers: true
     }
   })
   tl.from(stop.querySelector('img'), {
