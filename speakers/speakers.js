@@ -72,3 +72,5 @@ sections.forEach((stop, index) => {
     }
   })
 })
+
+// Add scroll snapping later if there is time
