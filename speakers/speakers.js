@@ -18,6 +18,7 @@ requestAnimationFrame(raf)
 let slider = document.querySelector('.slider')
 let BG = document.querySelector('.BG')
 let sections = gsap.utils.toArray('.slider section')
+let mask = document.querySelector('.mask')
 
 let tl = gsap.timeline({
   defaults: {
@@ -28,6 +29,17 @@ let tl = gsap.timeline({
     pin: true,
     scrub: 2,
     end: () => "+=" + slider.offsetWidth
+  }
+})
+
+//Scroll progress bar
+tl.to(mask, {
+  width: '100%',
+  scrollTrigger: {
+    trigger: BG,
+    start: 'top left',
+    end: 'bottom+=3400px top',
+    scrub: 1
   }
 })
 
@@ -46,8 +58,7 @@ sections.forEach((stop, index) => {
       start: '-500px center',
       end: '550px center',
       containerAnimation: tl,
-      scrub: true,
-      markers: true
+      scrub: true
     }
   })
   tl.from(stop.querySelector('img'), {
