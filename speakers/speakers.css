@@ -232,7 +232,7 @@ section {
 .inner {
   position: relative;
   display: flex;
-  align-items: start;
+  align-items: center;
 }
 
 .img-1 {
