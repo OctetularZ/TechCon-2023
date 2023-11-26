@@ -224,6 +224,8 @@ html {
   margin-top: 5%;
   font-size: 30px;
   text-decoration: underline;
+  animation: fadeIn 1s ease;
+  cursor: pointer;
 }
 
 .boxes-container {
@@ -287,5 +289,21 @@ html {
 .box button:hover a {
   color: white;
 }
+
+.one {
+  animation: slideInFromLeft 1s ease,
+    fadeIn 1s ease;
+}
+
+.two {
+  animation: slideInFromBottom 1s ease,
+    fadeIn 1s ease;
+}
+
+.three {
+  animation: slideInFromRight 1s ease,
+    fadeIn 1s ease;
+}
+
 
 /* Add gsap scroll down to keep contact container centered in vw if there is time */
