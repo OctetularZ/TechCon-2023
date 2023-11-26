@@ -12,3 +12,14 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+
+
+// Scroll To Bottom For Enquire Button
+
+document.getElementById('submit-button').addEventListener('click', function () {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    left: 0,
+    behavior: 'smooth'
+  })
+})
