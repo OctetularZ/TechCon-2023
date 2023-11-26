@@ -23,3 +23,22 @@ document.getElementById('submit-button').addEventListener('click', function () {
     behavior: 'smooth'
   })
 })
+
+function sendEmail() {
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "mydummyemail@gmail.com",
+    Password: "password",
+    To: 'enquiryemail@gmail.com',
+    From: document.getElementById("email").value,
+    Subject: "New Enquiry",
+    Body: "Name: " + document.getElementById("name").value +
+      "<br> Email: " + document.getElementById("email").value +
+      "<br> Phone Number: " + document.getElementById("phone").value +
+      "<br> Message: " + document.getElementById("message").value
+  }).then(
+    message => alert("Message Sent Successfully!")
+  );
+}
+
+// Add email information

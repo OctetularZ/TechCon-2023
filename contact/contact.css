@@ -322,6 +322,7 @@ form {
   margin: 100px auto;
   position: relative;
   z-index: 2;
+  animation: slideInFromBottom 1s ease;
 }
 
 form h3 {
