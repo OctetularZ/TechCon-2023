@@ -19,7 +19,7 @@ let middleSection = gsap.timeline({
   scrollTrigger: {
     trigger: '.image-text-container',
     start: '-180% 70%',
-    end: '390% 40%',
+    end: '350% 40%',
     toggleActions: 'restart restart none none',
     scrub: true
   }
@@ -44,23 +44,3 @@ middleSection.to('.final-call', {
   y: -150,
   opacity: 1
 })
-
-// When the user scrolls the page, execute stickNavbar
-window.onscroll = function () {
-  stickNavbar()
-};
-
-// Get the navbar
-let navbar = document.getElementById('outer-navi')
-
-// Get the offset position of the navbar
-let sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function stickNavbar() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
