@@ -26,21 +26,21 @@ let middleSection = gsap.timeline({
 })
 
 middleSection.to('.image-text-container', {
-  y: -500,
+  y: -400,
   opacity: 1
 })
 
 middleSection.to('.image-text-container-2', {
-  y: -300,
+  y: -250,
   opacity: 1
 })
 
 middleSection.to('.image-text-container-3', {
-  y: -350,
+  y: -300,
   opacity: 1
 })
 
 middleSection.to('.final-call', {
-  y: -150,
+  y: -100,
   opacity: 1
 })
