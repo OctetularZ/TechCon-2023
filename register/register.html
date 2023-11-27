@@ -27,7 +27,16 @@
     </ul>
   </nav>
   <div class="BG">
-
+    <div class="contact-form-container">
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <h3>REGISTRATION</h3>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </div>
 </body>
 
