@@ -62,7 +62,7 @@ sections.forEach((stop, index) => {
     }
   })
   tl.from(stop.querySelector('img'), {
-    xPercent: 50,
+    xPercent: 40,
     yPercent: -100,
     ease: 'elastic.out(1,1)',
     scrollTrigger: {
