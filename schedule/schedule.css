@@ -98,7 +98,13 @@
 html {
   margin: 0;
   overflow-x: hidden;
-  background-color: #23272a;
+}
+
+body {
+  background-image: url(../images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 * {
@@ -113,7 +119,6 @@ html {
 
 .BG {
   width: 100%;
-  background-color: #23272a;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -126,7 +131,8 @@ html {
   display: flex;
   flex-direction: row;
   padding: 15px;
-  background-color: #23272a;
+  /* bg colour - change */
+  background-color: #23286a;
   position: relative;
   z-index: 5;
   animation: slideInFromTop 0.8s ease;
@@ -186,7 +192,7 @@ html {
 }
 
 .call-btn:hover {
-  background-color: #000;
+  background-color: #ff4074;
   border: 2px solid white;
   color: white;
 }
@@ -210,7 +216,7 @@ html {
   content: "";
   display: block;
   margin: left;
-  background-color: #ffffff;
+  background-color: #ff4074;
   height: 3px;
   width: 0;
   left: 0;
