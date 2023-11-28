@@ -131,12 +131,11 @@ body {
   display: flex;
   flex-direction: row;
   padding: 15px;
-  /* bg colour - change */
-  background-color: #23286a;
   position: relative;
   z-index: 5;
-  animation: slideInFromTop 0.8s ease;
+  background-color: #121b3a;
   border-bottom: 2px solid white;
+  animation: slideInFromTop 0.8s ease;
   box-shadow: 0px 3px 10px 0px black;
 }
 
@@ -283,7 +282,7 @@ tr {
 }
 
 tr:nth-child(even) {
-  background-color: #000;
+  background-color: #121b3a;
 }
 
 tr:nth-child(even)+td {
