@@ -300,7 +300,7 @@ tr:nth-child(even)+td {
   width: 500px;
   text-align: center;
   border: 2px solid white;
-  background-color: #000;
+  background-color: #090e24;
   border-radius: 10px;
   color: white;
   transition: all 0.3s ease;
@@ -314,5 +314,5 @@ tr:nth-child(even)+td {
 
 input:focus {
   outline: none !important;
-  box-shadow: 0px 0px 5px 5px black;
+  box-shadow: 0px 0px 5px 5px #213363;
 }
