@@ -340,7 +340,8 @@ html {
 
 .final-call {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
   margin: 0 10vw;
   margin-top: 125px;
@@ -350,11 +351,12 @@ html {
 .final-call h3 {
   color: white;
   font-family: lemon;
-  font-size: 18px;
+  font-size: 1.5vw;
 }
 
 .final-call button {
-  margin-top: -10px;
+  margin-top: 10px;
+  font-size: 1vw;
 }
 
 @media screen and (max-width: 1500px) {
@@ -374,17 +376,6 @@ html {
 
   .middle-text-container {
     max-width: 30%;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .final-call {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .final-call button {
-    margin-top: 10px;
   }
 }
 
@@ -411,4 +402,116 @@ html {
     width: 550px;
     height: 250px;
   }
+}
+
+@media screen and (max-width: 900px) {
+  .image-text-container {
+    flex-direction: column;
+    margin-top: 280px;
+  }
+
+  .middle-text-container {
+    max-width: 80%;
+  }
+
+  .conference-img {
+    margin-bottom: 25px;
+    width: 450px;
+    height: 250px;
+  }
+
+  .image-text-container-2 {
+    flex-direction: column-reverse;
+  }
+
+  .image-text-container-3 {
+    flex-direction: column;
+  }
+
+  .final-call {
+    margin-top: 50px;
+  }
+
+  .nav-li {
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .image-text-container {
+    margin-top: 350px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .nav-li {
+    padding: 0px 10px;
+  }
+
+  .conference-img {
+    width: 350px;
+    height: 200px;
+  }
+
+  .image-text-container {
+    margin: 0;
+    margin-top: 370px;
+  }
+
+  .image-text-container-2 {
+    margin-top: -75px;
+  }
+
+  .image-text-container-3 {
+    margin: 0 20px;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .final-call {
+    margin-top: -50px;
+    opacity: 1 !important;
+  }
+
+  .nav-options {
+    margin-top: -50px;
+  }
+
+  .hero-description {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .final-call button {
+    font-size: 1.5vw;
+  }
+
+  .call-btn {
+    font-size: 1.5vw;
+  }
+
+  .home-link {
+    font-size: 1.3vw;
+  }
+
+  .name-title {
+    margin-left: 3vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .conference-img {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .nav-options {
+    display: none;
+  }
+
+
 }
