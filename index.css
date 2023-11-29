@@ -138,6 +138,7 @@ html {
   list-style: none;
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 15px;
   position: relative;
   z-index: 5;
@@ -150,10 +151,10 @@ html {
   color: white;
   font-family: lemon;
   margin-left: 5vw;
-  margin-right: 32vw;
+  margin-right: auto;
   white-space: nowrap;
   margin-top: 1vh;
-  font-size: 25px;
+  font-size: 2.3vw;
   border-radius: 10px;
   padding: 5px 15px;
   transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
@@ -162,7 +163,7 @@ html {
 }
 
 .name-title:hover {
-  box-shadow: inset 250px 0 0 0 #ffffff;
+  box-shadow: inset 450px 0 0 0 #ffffff;
   color: black;
 }
 
@@ -185,7 +186,8 @@ html {
   background-color: white;
   border-radius: 10px;
   border-style: none;
-  padding: 10px 20px;
+  font-size: 1vw;
+  padding: 0.8vw 1.3vw;
   margin-left: -10px;
   margin-top: 5px;
   color: black;
@@ -204,6 +206,7 @@ html {
 .home-link {
   text-decoration: none;
   color: #edeade;
+  font-size: 1vw;
 }
 
 .call-link {
@@ -238,25 +241,28 @@ html {
 
 .hero-left {
   margin-top: 20vh;
-  margin-left: 95px;
-  max-width: 445px;
+  margin-left: 6vw;
+  max-width: 30vw;
   animation: slideInFromFarLeft 1s ease;
 }
 
 .hero-title {
   font-family: lemon;
   color: white;
+  font-size: 2.5vw;
 }
 
 .hero-description {
   margin: 15px 0px;
   font-family: Poppins;
   color: #d3d4d7;
+  font-size: 1.2vw;
 }
 
 .hero-btn {
   margin-bottom: 200px;
   margin-left: 0px;
+  font-size: 1vw;
 }
 
 .spacer {
@@ -288,8 +294,8 @@ html {
 .image-text-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0px 110px;
+  justify-content: space-evenly;
+  margin: 0px 5%;
   align-items: center;
   margin-top: 250px;
   opacity: 0;
@@ -298,7 +304,7 @@ html {
 .image-text-container-2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0px 110px;
   align-items: center;
   opacity: 0;
@@ -307,7 +313,7 @@ html {
 .image-text-container-3 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0px 100px;
   align-items: center;
   margin-top: 250px;
@@ -315,29 +321,28 @@ html {
 }
 
 .middle-text-container {
-  max-width: 400px;
+  max-width: 500px;
   text-align: center;
 }
 
 .middle-text-container h3 {
   color: white;
   font-family: lemon;
-  font-size: 28px;
+  font-size: 2vw;
   margin-bottom: 10px;
 }
 
 .middle-text-container p {
   color: white;
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 1.5vw;
 }
 
 .final-call {
-  margin-top: 150px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0 500px;
+  justify-content: space-evenly;
+  margin: 0 10vw;
   margin-top: 125px;
   opacity: 0;
 }
@@ -350,4 +355,60 @@ html {
 
 .final-call button {
   margin-top: -10px;
+}
+
+@media screen and (max-width: 1500px) {
+  .image-text-container {
+    margin: 0 20px;
+    margin-top: 250px;
+  }
+
+  .image-text-container-2 {
+    margin: 0 20px;
+  }
+
+  .image-text-container-3 {
+    margin: 0 20px;
+    margin-top: 250px;
+  }
+
+  .middle-text-container {
+    max-width: 30%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .final-call {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .final-call button {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .image-text-container {
+    margin: 0 20px;
+    margin-top: 250px;
+  }
+
+  .image-text-container-2 {
+    margin: 0 20px;
+  }
+
+  .image-text-container-3 {
+    margin: 0 20px;
+    margin-top: 250px;
+  }
+
+  .middle-text-container {
+    max-width: 30%;
+  }
+
+  .conference-img {
+    width: 550px;
+    height: 250px;
+  }
 }
