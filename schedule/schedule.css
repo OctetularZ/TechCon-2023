@@ -371,8 +371,6 @@ input:focus {
   }
 }
 
-@media screen and (max-width: 500px) {}
-
 @media screen and (max-width: 450px) {
   .call-btn {
     font-size: 1.5vw;
@@ -453,5 +451,3 @@ input:focus {
     margin-left: 0px;
   }
 }
-
-@media screen and (max-width: 320px) {}

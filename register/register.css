@@ -270,3 +270,118 @@ form button {
   margin: 20px auto 0;
   border-radius: 30px;
 }
+
+@media screen and (max-width: 900px) {
+  .nav-li {
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+
+  th,
+  td {
+    font-size: 1.5vw;
+  }
+
+  .table-title {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .nav-li {
+    padding: 0px 10px;
+  }
+
+  th,
+  td {
+    padding: 4px 7px;
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 450px) {
+  .call-btn {
+    font-size: 1.5vw;
+  }
+
+  .home-link {
+    font-size: 1.3vw;
+  }
+
+  .name-title {
+    margin-left: 3vw;
+  }
+
+  .table-title {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .name-title {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .nav-li-container {
+    display: none;
+    align-items: center;
+  }
+
+  .home-link {
+    font-size: 2.5vw;
+  }
+
+  .call-btn {
+    font-size: 2vw;
+    margin-top: 10px;
+  }
+
+  .hb-btn {
+    background-color: transparent;
+    border-style: none;
+    display: contents;
+  }
+
+  .hamburger {
+    display: contents;
+  }
+
+  .exit {
+    display: contents;
+    padding: 20px;
+  }
+
+  .exit-btn {
+    display: contents;
+    background-color: transparent;
+    position: absolute;
+  }
+
+  .hb-btn-pressed {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    inset: 0;
+    padding-top: 35vh;
+    background: #0a0f25;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .name-title {
+    margin-right: auto;
+  }
+
+  .nav-btn {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {}
