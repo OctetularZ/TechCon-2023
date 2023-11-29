@@ -44,3 +44,31 @@ middleSection.to('.final-call', {
   y: -100,
   opacity: 1
 })
+
+// Add Hamburger menu
+
+function addMenu() {
+  let menu = document.getElementById('menu-dd')
+  menu.classList.add('hb-btn-pressed')
+  let exitBtn = document.getElementById('exit-menu')
+  exitBtn.style.display = 'contents'
+  exitBtn.style.zIndex = 20
+  let exitShow = document.getElementById('show-x')
+  exitShow.style.display = 'contents'
+  exitShow.style.zIndex = 20
+}
+
+function removeMenu() {
+  let menu = document.getElementById('menu-dd')
+  menu.classList.remove('hb-btn-pressed')
+}
+
+let dropD = document.getElementById("dropdown")
+dropD.onclick = function () {
+  addMenu()
+}
+
+let exit = document.getElementById("exit-menu")
+exit.onclick = function () {
+  removeMenu()
+}

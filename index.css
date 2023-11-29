@@ -113,7 +113,6 @@ html {
 
 .top {
   width: 100%;
-  background-color: #23272a;
   position: relative;
   background-image: url(./images/transparent\ cube.jpg);
   background-position: center;
@@ -182,6 +181,10 @@ html {
   font-family: lemon;
 }
 
+.exit-btn {
+  display: none;
+}
+
 .call-btn {
   background-color: white;
   border-radius: 10px;
@@ -237,6 +240,23 @@ html {
 
 .home-link:hover:after {
   width: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hb-btn {
+  display: none;
+}
+
+.exit {
+  display: none;
+}
+
+.nav-li-container {
+  display: flex;
+  align-items: center;
 }
 
 .hero-left {
@@ -358,6 +378,8 @@ html {
   margin-top: 10px;
   font-size: 1vw;
 }
+
+
 
 @media screen and (max-width: 1500px) {
   .image-text-container {
@@ -506,12 +528,82 @@ html {
     width: 300px;
     height: 150px;
   }
+
+  .hero-description {
+    font-size: 2vw;
+  }
+
+  .hero-title {
+    font-size: 3vw;
+  }
+
+  .name-title {
+    font-size: 4vw;
+  }
 }
 
 @media screen and (max-width: 420px) {
-  .nav-options {
+  .nav-li-container {
     display: none;
+    align-items: center;
   }
 
+  .home-link {
+    font-size: 3vw;
+  }
 
+  .call-btn {
+    font-size: 3vw;
+  }
+
+  .hb-btn {
+    background-color: transparent;
+    border-style: none;
+    display: contents;
+  }
+
+  .hamburger {
+    display: contents;
+  }
+
+  .exit {
+    display: contents;
+  }
+
+  .exit-btn {
+    display: contents;
+    background-color: transparent;
+    position: absolute;
+  }
+
+  .hb-btn-pressed {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    inset: 0;
+    padding-top: 35vh;
+    background: #0a0f25;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .name-title {
+    margin-right: auto;
+  }
+
+  .middle-text-container h3 {
+    font-size: 3vw;
+  }
+
+  .middle-text-container p {
+    font-size: 2vw;
+  }
+
+  .final-call h3 {
+    font-size: 2vw;
+  }
+
+  .nav-btn {
+    margin-left: 0px;
+  }
 }
