@@ -15,17 +15,22 @@
 
 <body>
   <nav class="outer-nav">
-    <ul class="nav-options" id="outer-navi">
+    <ul class="nav-options">
       <a class="name-title" href="../index.html">Tech-Con 2023</a>
-      <li class="nav-li"><button class="home-btn"><a class="home-link"
-            href="../schedule/schedule.html">Schedule</a></button>
-      </li>
-      <li class="nav-li"><button class="home-btn"><a class="home-link"
-            href="../speakers/speakers.html">Speakers</a></button></li>
-      <li class="nav-li"><button class="home-btn"><a class="home-link"
-            href="../contact/contact.html">Contact</a></button></li>
-      <li class="nav-li"><a class="call-link" href="../register/register.html"><button
-            class="call-btn">Register</button></a></li>
+      <button class="hb-btn" id="dropdown" onclick="addMenu()"><i class="fa-solid fa-bars fa-lg hamburger"
+          style="color: #ffffff;"></i></button>
+      <div class="nav-li-container" id="menu-dd">
+        <button class="exit-btn" id="exit-menu"><i class="fa-solid fa-xmark fa-xl exit"
+            style="color: #ffffff;"></i></button>
+        <li class="nav-li"><button class="home-btn"><a class="home-link"
+              href="../schedule/schedule.html">Schedule</a></button></li>
+        <li class="nav-li"><button class="home-btn"><a class="home-link"
+              href="../speakers/speakers.html">Speakers</a></button></li>
+        <li class="nav-li"><button class="home-btn"><a class="home-link"
+              href="../contact/contact.html">Contact</a></button></li>
+        <li class="nav-li"><a class="call-link" href="../register/register.html"><button
+              class="call-btn nav-btn">Register</button></a></li>
+      </div>
     </ul>
   </nav>
   <div class="BG">

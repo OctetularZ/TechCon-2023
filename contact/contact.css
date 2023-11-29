@@ -123,6 +123,7 @@ body {
   list-style: none;
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 15px;
   position: relative;
   z-index: 5;
@@ -135,10 +136,10 @@ body {
   color: white;
   font-family: lemon;
   margin-left: 5vw;
-  margin-right: 32vw;
+  margin-right: auto;
   white-space: nowrap;
   margin-top: 1vh;
-  font-size: 25px;
+  font-size: 2.3vw;
   border-radius: 10px;
   padding: 5px 15px;
   transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
@@ -147,7 +148,7 @@ body {
 }
 
 .name-title:hover {
-  box-shadow: inset 250px 0 0 0 #ffffff;
+  box-shadow: inset 450px 0 0 0 #ffffff;
   color: black;
 }
 
@@ -166,11 +167,16 @@ body {
   font-family: lemon;
 }
 
+.exit-btn {
+  display: none;
+}
+
 .call-btn {
   background-color: white;
   border-radius: 10px;
   border-style: none;
-  padding: 10px 20px;
+  font-size: 1vw;
+  padding: 0.8vw 1.3vw;
   margin-left: -10px;
   margin-top: 5px;
   color: black;
@@ -189,6 +195,7 @@ body {
 .home-link {
   text-decoration: none;
   color: #edeade;
+  font-size: 1vw;
 }
 
 .call-link {
@@ -219,6 +226,23 @@ body {
 
 .home-link:hover:after {
   width: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hb-btn {
+  display: none;
+}
+
+.exit {
+  display: none;
+}
+
+.nav-li-container {
+  display: flex;
+  align-items: center;
 }
 
 .boxes-title {
@@ -361,4 +385,113 @@ form button {
   width: 150px;
   margin: 20px auto 0;
   border-radius: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-li {
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+
+  form input,
+  form textarea {
+    padding: 10px;
+  }
+
+  form button {
+    padding: 10px;
+    background: #ff4074;
+  }
+
+  form h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: lemon;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .nav-li {
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .call-btn {
+    font-size: 1.5vw;
+  }
+
+  .home-link {
+    font-size: 1.3vw;
+  }
+
+  .name-title {
+    margin-left: 3vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .name-title {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .nav-li-container {
+    display: none;
+    align-items: center;
+  }
+
+  .home-link {
+    font-size: 2.5vw;
+  }
+
+  .call-btn {
+    font-size: 2vw;
+    margin-top: 10px;
+  }
+
+  .hb-btn {
+    background-color: transparent;
+    border-style: none;
+    display: contents;
+  }
+
+  .hamburger {
+    display: contents;
+  }
+
+  .exit {
+    display: contents;
+    padding: 20px;
+  }
+
+  .exit-btn {
+    display: contents;
+    background-color: transparent;
+    position: absolute;
+  }
+
+  .hb-btn-pressed {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    inset: 0;
+    padding-top: 35vh;
+    background: #0a0f25;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .name-title {
+    margin-right: auto;
+  }
+
+  .nav-btn {
+    margin-left: 0px;
+  }
 }
