@@ -50,12 +50,6 @@ middleSection.to('.final-call', {
 function addMenu() {
   let menu = document.getElementById('menu-dd')
   menu.classList.add('hb-btn-pressed')
-  let exitBtn = document.getElementById('exit-menu')
-  exitBtn.style.display = 'contents'
-  exitBtn.style.zIndex = 20
-  let exitShow = document.getElementById('show-x')
-  exitShow.style.display = 'contents'
-  exitShow.style.zIndex = 20
 }
 
 function removeMenu() {

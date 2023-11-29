@@ -521,13 +521,6 @@ html {
   .name-title {
     margin-left: 3vw;
   }
-}
-
-@media screen and (max-width: 400px) {
-  .conference-img {
-    width: 300px;
-    height: 150px;
-  }
 
   .hero-description {
     font-size: 2vw;
@@ -535,6 +528,13 @@ html {
 
   .hero-title {
     font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .conference-img {
+    width: 300px;
+    height: 150px;
   }
 
   .name-title {
@@ -549,11 +549,12 @@ html {
   }
 
   .home-link {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 
   .call-btn {
-    font-size: 3vw;
+    font-size: 2vw;
+    margin-top: 10px;
   }
 
   .hb-btn {
@@ -568,6 +569,7 @@ html {
 
   .exit {
     display: contents;
+    padding: 20px;
   }
 
   .exit-btn {
@@ -605,5 +607,12 @@ html {
 
   .nav-btn {
     margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .conference-img {
+    width: 250px;
+    height: 125px;
   }
 }
