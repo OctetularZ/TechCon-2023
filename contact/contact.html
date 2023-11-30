@@ -8,35 +8,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="contact.css">
   <script type="module" src="contact.js"></script>
+  <!-- Lenis Smooth Scroll -->
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+  <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/0aead53c82.js" crossorigin="anonymous"></script>
+  <!-- SMTP to allow for sending emails to yourself holding all the information inputted in the contact form -->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
+  <!-- Responsive Navbar -->
   <nav class="outer-nav">
     <ul class="nav-options">
+      <!-- Techcon title -->
       <a class="name-title" href="../index.html">Tech-Con 2023</a>
+      <!-- Hamburger icon -->
       <button class="hb-btn" id="dropdown" onclick="addMenu()"><i class="fa-solid fa-bars fa-lg hamburger"
           style="color: #ffffff;"></i></button>
       <div class="nav-li-container" id="menu-dd">
+        <!-- Exit Icon for certain widths for responsiveness -->
         <button class="exit-btn" id="exit-menu"><i class="fa-solid fa-xmark fa-xl exit"
             style="color: #ffffff;"></i></button>
+        <!-- List of navbar links for navigation -->
         <li class="nav-li"><button class="home-btn"><a class="home-link"
               href="../schedule/schedule.html">Schedule</a></button></li>
         <li class="nav-li"><button class="home-btn"><a class="home-link"
               href="../speakers/speakers.html">Speakers</a></button></li>
         <li class="nav-li"><button class="home-btn"><a class="home-link"
               href="../contact/contact.html">Contact</a></button></li>
+        <!-- Call to action button -->
         <li class="nav-li"><a class="call-link" href="../register/register.html"><button
               class="call-btn nav-btn">Register</button></a></li>
       </div>
     </ul>
   </nav>
+  <!-- Page container  -->
   <div class="BG">
+
+    <!-- Contact page title -->
     <h2 class="boxes-title">Contact Us</h2>
+
+    <!-- Container for the text and icon boxes at top of page -->
     <div class="boxes-container">
+
+      <!-- Box for icon and text -->
       <div class="box one">
+
+        <!-- Icon  -->
         <i class="fa-solid fa-phone fa-5x" style="color: #ffffff;"></i>
         <h3>Phone</h3>
         <p>Give us a call? <br> <br>(Monday to Friday, 9am to 9pm BST) <br>
@@ -62,13 +80,19 @@
         <button id="submit-button">Enquire</button>
       </div>
     </div>
+
+    <!-- Contact form -->
     <div class="contact-form-container">
       <form onsubmit="sendEmail(); reset(); return false;">
+        <!-- Form title  -->
         <h3>GET IN TOUCH</h3>
+
+        <!-- Form inputs -->
         <input type="text" id="name" placeholder="Name" required>
         <input type="email" id="email" placeholder="Email" required>
         <input type="text" id="phone" placeholder="Phone Number" required>
         <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+        <!-- Form submit button -->
         <button type="submit">Submit</button>
       </form>
     </div>

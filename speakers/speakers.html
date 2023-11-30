@@ -8,36 +8,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="speakers.css">
   <script type="module" src="speakers.js"></script>
+  <!-- Lenis Smooth Scroll -->
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+  <!-- GSAP scroll animations -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/0aead53c82.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <!-- Responsive Navbar -->
   <nav class="outer-nav">
     <ul class="nav-options">
+      <!-- Techcon title -->
       <a class="name-title" href="../index.html">Tech-Con 2023</a>
+      <!-- Hamburger icon -->
       <button class="hb-btn" id="dropdown" onclick="addMenu()"><i class="fa-solid fa-bars fa-lg hamburger"
           style="color: #ffffff;"></i></button>
       <div class="nav-li-container" id="menu-dd">
+        <!-- Exit Icon for certain widths for responsiveness -->
         <button class="exit-btn" id="exit-menu"><i class="fa-solid fa-xmark fa-xl exit"
             style="color: #ffffff;"></i></button>
+        <!-- List of navbar links for navigation -->
         <li class="nav-li"><button class="home-btn"><a class="home-link"
               href="../schedule/schedule.html">Schedule</a></button></li>
         <li class="nav-li"><button class="home-btn"><a class="home-link"
               href="../speakers/speakers.html">Speakers</a></button></li>
         <li class="nav-li"><button class="home-btn"><a class="home-link"
               href="../contact/contact.html">Contact</a></button></li>
+        <!-- Call to action button -->
         <li class="nav-li"><a class="call-link" href="../register/register.html"><button
               class="call-btn nav-btn">Register</button></a></li>
       </div>
     </ul>
   </nav>
+  <!-- Page container  -->
   <div class="BG">
+
+    <!-- Scrollable images and text container -->
     <div class="slider">
+
+      <!-- Section containing image and text -->
       <section class="section-one">
         <div class="inner">
+          <!-- Text Container -->
           <div class="content">
             <h1>Steve Jobs</h1>
             <p>Steve Jobs is an American inventor, designer, and entrepreneur who is the cofounder, chief executive,
@@ -48,15 +63,20 @@
               products, which include the iPhone, iPad, and iPod, have dictated the evolution of modern technology.
             </p>
           </div>
+          <!-- Section image -->
           <img class="img-1" src="../images/steve jobs.jpeg" alt="Steve Jobs" />
         </div>
       </section>
+      <!-- Levitating caret and text prompting user to scroll down -->
       <div class="caret-container">
         <h4 class="caret-text">Scroll Down</h4>
         <i class="fa-solid fa-chevron-right fa-xl caret-down" style="color: #ff4074;"></i>
       </div>
+
+      <!-- Section containing image and text -->
       <section class="section-two">
         <div class="inner">
+          <!-- Text Container -->
           <div class="content">
             <h1>Bill Gates</h1>
             <p>Entrepreneur and businessman Bill Gates and his business partner Paul Allen founded and built the world's
@@ -65,11 +85,15 @@
               2014, Gates announced that he was stepping down as Microsoft's chairman to focus on charitable work at his
               foundation, the Bill and Melinda Gates Foundation.</p>
           </div>
+          <!-- Section image -->
           <img class="img-1" src="../images/Bill Gates.jpeg" alt="Bill Gates" />
         </div>
       </section>
+
+      <!-- Section containing image and text -->
       <section class="section-three">
         <div class="inner">
+          <!-- Text Container -->
           <div class="content">
             <h1>Mark Zuckerburg</h1>
             <p>Mark Zuckerberg co-founded the social-networking website Facebook out of his college dorm room at Harvard
@@ -78,11 +102,15 @@
               birth of Facebook was portrayed in the 2010 film The Social Network. Facebook is one of the most used
               social media sites of this generation, and most likely, many generations to come.</p>
           </div>
+          <!-- Section image -->
           <img class="img-1" src="../images/mark zuckerburg.jpeg" alt="Mark Zuckerburg" />
         </div>
       </section>
+
+      <!-- Section containing image and text -->
       <section class="section-four">
         <div class="inner">
+          <!-- Text Container -->
           <div class="content">
             <h1>Tony Stark</h1>
             <p>Anthony Edward "Tony" Stark was a billionaire industrialist, a founding member of the Avengers, and
@@ -92,11 +120,15 @@
               lifestyle for many years until he decided to flip the switch in his life and bring countless revolutions
               to the world of tech such as J.A.R.V.I.S, and MK1.</p>
           </div>
+          <!-- Section image -->
           <img class="img-1" src="../images/tony stark.jpeg" alt="Tony Stark" />
         </div>
       </section>
+
+      <!-- Section containing image and text -->
       <section class="section-five">
         <div class="inner">
+          <!-- Text Container -->
           <div class="content">
             <h1>Sophia Derylls</h1>
             <p>Born in United States, California, Sophia Derylls struggled to get into any form of education until a
@@ -106,6 +138,7 @@
               to become the CEO of the two most financially fruitful companies: Luxemo and W.O.L.F. These two companies
               combined have produced more money than any tech company has in the past decade.</p>
           </div>
+          <!-- Section image -->
           <img class="img-2" src="../images/sophia derylls.jpeg" alt="Sophia Derylls" />
         </div>
       </section>

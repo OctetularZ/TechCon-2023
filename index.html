@@ -8,35 +8,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="index.css">
   <script type="module" src="index.js"></script>
+  <!-- Lenis Smooth Scroll -->
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+  <!-- GSAP scroll animations -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/0aead53c82.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="outer-div">
     <div class="top">
+      <!-- Responsive Navbar -->
       <nav class="outer-nav">
         <ul class="nav-options">
+          <!-- Techcon title -->
           <a class="name-title" href="index.html">Tech-Con 2023</a>
+          <!-- Hamburger icon -->
           <button class="hb-btn" id="dropdown" onclick="addMenu()"><i class="fa-solid fa-bars fa-lg hamburger"
               style="color: #ffffff;"></i></button>
           <div class="nav-li-container" id="menu-dd">
+            <!-- Exit Icon for certain widths for responsiveness -->
             <button class="exit-btn" id="exit-menu"><i class="fa-solid fa-xmark fa-xl exit"
                 style="color: #ffffff;"></i></button>
+            <!-- List of navbar links for navigation -->
             <li class="nav-li"><button class="home-btn"><a class="home-link"
                   href="./schedule/schedule.html">Schedule</a></button></li>
             <li class="nav-li"><button class="home-btn"><a class="home-link"
                   href="./speakers/speakers.html">Speakers</a></button></li>
             <li class="nav-li"><button class="home-btn"><a class="home-link"
                   href="./contact/contact.html">Contact</a></button></li>
+            <!-- Call to action button -->
             <li class="nav-li"><a class="call-link" href="../register/register.html"><button
                   class="call-btn nav-btn">Register</button></a></li>
           </div>
         </ul>
       </nav>
 
+      <!-- Hero Section text and call to action button on left side of screen at the top -->
       <div class="hero-left">
         <h1 class="hero-title">The Biggest Tech Conference In The World</h1>
         <p class="hero-description">Come join thousands who are taking part in the BIGGEST technology conference in the
@@ -44,15 +54,22 @@
           names in the tech industry.</p>
         <a class="call-link" href="../register/register.html"><button class="call-btn hero-btn">Register</button></a>
       </div>
+      <!-- Waves SVG used a separator between the top and middle sections of the page -->
       <img class="spacer layer1" src="./assets/layered-waves-haikei.svg" />
     </div>
     <div class="middle">
+      <!-- Same wave as before but reflected on the X-axis to create a seamless separator.-->
       <img class="spacer layer1-reverse" src="./assets/layered-waves-haikei.svg" />
 
+      <!-- Scrollable sections of images and text (using GSAP) -->
+
+      <!-- Image and text container -->
       <div class="image-text-container">
         <div class="middle-image-container">
+          <!-- Image of section -->
           <img class="conference-img" src="images/conference.png" />
         </div>
+        <!-- Text of section -->
         <div class="middle-text-container">
           <h3>An expericence you'll never forget...</h3>
           <p>"The only tech conference you need and an experience that you'll never forget!" - New York Times. This
@@ -62,7 +79,9 @@
         </div>
       </div>
 
+      <!-- Image and text container -->
       <div class="image-text-container-2">
+        <!-- Text of section -->
         <div class="middle-text-container">
           <h3>Prestige Venue</h3>
           <p>As expected from a reputable conference glorified for it's high quality, the venue this conference will be
@@ -72,14 +91,18 @@
           </p>
         </div>
         <div class="middle-image-container">
+          <!-- Image of section -->
           <img class="conference-img" src="images/conference venue.jpeg" />
         </div>
       </div>
 
+      <!-- Image and text container -->
       <div class="image-text-container-3">
         <div class="middle-image-container">
+          <!-- Image of section -->
           <img class="conference-img" src="images/otp-con.jpeg" />
         </div>
+        <!-- Text of section -->
         <div class="middle-text-container">
           <h3>Longest Tech-Con Ever</h3>
           <p>The year's tech conference will span over 3 weeks to give everyone the opportunity to be a part of the
@@ -90,8 +113,11 @@
         </div>
       </div>
 
+      <!-- Secondary call to action button displayed at the bottom -->
       <div class="final-call">
+        <!-- Call to action text -->
         <h3>What are you waiting for... </h3>
+        <!-- Call to action button -->
         <a class="call-link" href="../register/register.html"><button class="call-btn hero-btn">Register</button></a>
       </div>
     </div>

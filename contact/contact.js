@@ -24,6 +24,8 @@ document.getElementById('submit-button').addEventListener('click', function () {
   })
 })
 
+
+// Add email information
 function sendEmail() {
   Email.send({
     Host: "smtp.gmail.com",
@@ -40,8 +42,6 @@ function sendEmail() {
     message => alert("Message Sent Successfully!")
   );
 }
-
-// Add email information
 
 
 // Add Hamburger menu

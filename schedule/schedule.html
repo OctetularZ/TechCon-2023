@@ -8,35 +8,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="schedule.css">
   <script type="module" src="schedule.js"></script>
+  <!-- Lenis Smooth Scroll -->
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+  <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/0aead53c82.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <!-- Responsive Navbar -->
   <nav class="outer-nav">
     <ul class="nav-options">
+      <!-- Techcon title -->
       <a class="name-title" href="../index.html">Tech-Con 2023</a>
+      <!-- Hamburger icon -->
       <button class="hb-btn" id="dropdown" onclick="addMenu()"><i class="fa-solid fa-bars fa-lg hamburger"
           style="color: #ffffff;"></i></button>
       <div class="nav-li-container" id="menu-dd">
+        <!-- Exit Icon for certain widths for responsiveness -->
         <button class="exit-btn" id="exit-menu"><i class="fa-solid fa-xmark fa-xl exit"
             style="color: #ffffff;"></i></button>
+        <!-- List of navbar links for navigation -->
         <li class="nav-li"><button class="home-btn"><a class="home-link"
               href="../schedule/schedule.html">Schedule</a></button></li>
         <li class="nav-li"><button class="home-btn"><a class="home-link"
               href="../speakers/speakers.html">Speakers</a></button></li>
         <li class="nav-li"><button class="home-btn"><a class="home-link"
               href="../contact/contact.html">Contact</a></button></li>
+        <!-- Call to action button -->
         <li class="nav-li"><a class="call-link" href="../register/register.html"><button
               class="call-btn nav-btn">Register</button></a></li>
       </div>
     </ul>
   </nav>
+  <!-- Page container  -->
   <div class="BG">
+
+    <!-- Logo image -->
     <div class="logo-container"><img class="logo" src="../images/logo.png" /></div>
+
+    <!-- Table title -->
     <h3 class="table-title">Tech-Con 2023 Schedule</h3>
+
+    <!-- Input box used to filter the schedule table -->
     <input type="text" id="FilterInput" onkeyup="filter()" placeholder="Filter By Day..."
       title="Filter Table By Day Of Event">
+
+    <!-- Schedule table -->
     <div class="table-container">
       <table class="schedule-table" id="schedule-table-id">
         <tr>
