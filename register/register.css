@@ -1,3 +1,4 @@
+/* Import fonts */
 @font-face {
   font-family: lemon;
   src: url(../lemon_milk/LEMONMILK-Regular.otf);
@@ -13,6 +14,7 @@
   src: url(../Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
 }
 
+/* Add possibly used animations */
 @keyframes slideInFromRight {
   0% {
     transform: translateX(100%);
@@ -95,6 +97,7 @@
   }
 }
 
+/* CSS for the register page */
 html {
   margin: 0;
   background-color: #121b3a;
@@ -295,6 +298,7 @@ form button {
   border-radius: 30px;
 }
 
+/* Adding required screen size adaptations to allow the page to be responsive and adapt to all screen sizes */
 @media screen and (max-width: 900px) {
   .nav-li {
     padding: 0px 20px;
