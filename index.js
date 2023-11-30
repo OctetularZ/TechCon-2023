@@ -1,4 +1,4 @@
-//Smooth scroll
+//Adds Smooth scroll to the web page
 
 const lenis = new Lenis()
 
@@ -13,7 +13,8 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
-//GSAP scrolling
+
+//GSAP scrolling animation for the home page scrolling through the text and image sections and the final call to action section in the middle to bottom of the page
 
 let middleSection = gsap.timeline({
   scrollTrigger: {
@@ -25,6 +26,7 @@ let middleSection = gsap.timeline({
   }
 })
 
+// Moves the sections up by a y-value and increases the opacity to 1 from 0 (which is set in the CSS).
 middleSection.to('.image-text-container', {
   y: -400,
   opacity: 1
@@ -45,7 +47,7 @@ middleSection.to('.final-call', {
   opacity: 1
 })
 
-// Add Hamburger menu
+// Add hamburger icon to open the navbar menu when a certain screen size is met and an exit button to exit the menu when it is open. (for responsiveness)
 
 function addMenu() {
   let menu = document.getElementById('menu-dd')

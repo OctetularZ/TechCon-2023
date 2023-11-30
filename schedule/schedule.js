@@ -1,4 +1,4 @@
-//Smooth scroll
+//Adds Smooth scroll to the web page
 
 const lenis = new Lenis()
 
@@ -13,8 +13,10 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
+
+// Filer for the schedule table to enable the user to filer the table for a certain day (i.e. Wednesday, Tuesday, etc)
 function filter() {
-  // Declare variables
+  // Declaring variables
   let input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("FilterInput");
   filter = input.value.toUpperCase();
@@ -35,12 +37,13 @@ function filter() {
   }
 }
 
+// Adds the event listener to input box used for filtering the table on the schedule page
 let input = document.getElementById("FilterInput")
 input.onkeyup = function () {
   filter()
 }
 
-// Add Hamburger menu
+// Add hamburger icon to open the navbar menu when a certain screen size is met and an exit button to exit the menu when it is open. (for responsiveness)
 
 function addMenu() {
   let menu = document.getElementById('menu-dd')

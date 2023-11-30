@@ -1,4 +1,4 @@
-//Smooth scroll
+//Adds Smooth scroll to the web page
 
 const lenis = new Lenis()
 
@@ -14,7 +14,7 @@ function raf(time) {
 requestAnimationFrame(raf)
 
 
-// Scroll To Bottom For Enquire Button
+// Scroll To Bottom of the page with Enquire Button when clicked on the contact page
 
 document.getElementById('submit-button').addEventListener('click', function () {
   window.scrollTo({
@@ -25,7 +25,7 @@ document.getElementById('submit-button').addEventListener('click', function () {
 })
 
 
-// Add email information
+// This is here to allow for the developer to add their email information so they can receive the data submitted by the user through the form on the register page via email
 function sendEmail() {
   Email.send({
     Host: "smtp.gmail.com",
@@ -44,7 +44,7 @@ function sendEmail() {
 }
 
 
-// Add Hamburger menu
+// Add hamburger icon to open the navbar menu when a certain screen size is met and an exit button to exit the menu when it is open. (for responsiveness)
 
 function addMenu() {
   let menu = document.getElementById('menu-dd')

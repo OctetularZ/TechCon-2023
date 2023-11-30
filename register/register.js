@@ -1,4 +1,4 @@
-//Smooth scroll
+//Adds Smooth scroll to the web page
 
 const lenis = new Lenis()
 
@@ -13,7 +13,7 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
-// Add Hamburger menu
+// Add hamburger icon to open the navbar menu when a certain screen size is met and an exit button to exit the menu when it is open. (for responsiveness)
 
 function addMenu() {
   let menu = document.getElementById('menu-dd')
@@ -35,7 +35,7 @@ exit.onclick = function () {
   removeMenu()
 }
 
-// Add email information
+// This is here to allow for the developer to add their email information so they can receive the data submitted by the user through the form on the register page via email
 function sendEmail() {
   Email.send({
     Host: "smtp.gmail.com",
