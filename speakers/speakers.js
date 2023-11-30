@@ -15,62 +15,53 @@ requestAnimationFrame(raf)
 
 //gsap fake horizontal scroll effect
 
-let slider = document.querySelector('.slider')
-let BG = document.querySelector('.BG')
-let sections = gsap.utils.toArray('.slider section')
-let mask = document.querySelector('.mask')
-
-let tl = gsap.timeline({
-  defaults: {
-    ease: 'none'
-  },
+let image_slider = gsap.timeline({
   scrollTrigger: {
-    trigger: BG,
-    pin: true,
-    scrub: 2,
-    end: () => "+=" + slider.offsetWidth
+    trigger: '.section-one',
+    start: '-90% 70%',
+    end: '340% 40%',
+    toggleActions: 'restart restart none none',
+    scrub: true,
+    markers: true
   }
 })
 
-//Scroll progress bar
-tl.to(mask, {
-  width: '100%',
-  scrollTrigger: {
-    trigger: BG,
-    start: 'top left',
-    end: 'bottom+=3400px top',
-    scrub: 1
-  }
+image_slider.to('.section-one', {
+  y: -100,
+  opacity: 1
 })
 
-//Changes how far to the right you can scroll
-tl.to(slider, {
-  xPercent: -66.7
+image_slider.to('.section-two', {
+  y: -150,
+  opacity: 1
 })
 
-
-sections.forEach((stop, index) => {
-  tl.from(stop.querySelector('.content'), {
-    yPercent: -50,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: stop.querySelector('.content'),
-      start: '-500px center',
-      end: '550px center',
-      containerAnimation: tl,
-      scrub: true
-    }
-  })
-  tl.from(stop.querySelector('img'), {
-    xPercent: 40,
-    yPercent: -100,
-    ease: 'elastic.out(1,1)',
-    scrollTrigger: {
-      trigger: stop.querySelector('img'),
-      scrub: 2,
-      containerAnimation: tl
-    }
-  })
+image_slider.to('.section-three', {
+  y: -150,
+  opacity: 1
 })
 
 // Add scroll snapping later if there is time
+
+
+// Add Hamburger menu
+
+function addMenu() {
+  let menu = document.getElementById('menu-dd')
+  menu.classList.add('hb-btn-pressed')
+}
+
+function removeMenu() {
+  let menu = document.getElementById('menu-dd')
+  menu.classList.remove('hb-btn-pressed')
+}
+
+let dropD = document.getElementById("dropdown")
+dropD.onclick = function () {
+  addMenu()
+}
+
+let exit = document.getElementById("exit-menu")
+exit.onclick = function () {
+  removeMenu()
+}
