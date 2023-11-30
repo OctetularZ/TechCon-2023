@@ -43,6 +43,12 @@ function sendEmail() {
   );
 }
 
+// Add event listener for form submission
+let contactForm = document.getElementById("contact-form")
+contactForm.onsubmit = function () {
+  sendEmail()
+}
+
 
 // Add hamburger icon to open the navbar menu when a certain screen size is met and an exit button to exit the menu when it is open. (for responsiveness)
 
