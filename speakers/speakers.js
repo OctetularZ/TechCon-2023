@@ -19,10 +19,9 @@ let image_slider = gsap.timeline({
   scrollTrigger: {
     trigger: '.section-one',
     start: '-90% 70%',
-    end: '340% 40%',
+    end: '650% 40%',
     toggleActions: 'restart restart none none',
-    scrub: true,
-    markers: true
+    scrub: true
   }
 })
 
@@ -37,6 +36,16 @@ image_slider.to('.section-two', {
 })
 
 image_slider.to('.section-three', {
+  y: -150,
+  opacity: 1
+})
+
+image_slider.to('.section-four', {
+  y: -150,
+  opacity: 1
+})
+
+image_slider.to('.section-five', {
   y: -150,
   opacity: 1
 })
