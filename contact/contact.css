@@ -110,7 +110,7 @@ html {
 }
 
 body {
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/bg.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
