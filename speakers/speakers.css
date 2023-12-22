@@ -303,6 +303,7 @@ section {
   align-items: center;
   padding: 0 100px;
   justify-content: space-between;
+  animation: slideInFromBottom 1s ease;
 }
 
 .img-1 {
