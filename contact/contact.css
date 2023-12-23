@@ -404,6 +404,11 @@ form button {
   .boxes-container {
     justify-content: center;
   }
+
+  .home-link,
+  .call-btn {
+    font-size: 1.2vw;
+  }
 }
 
 @media screen and (max-width: 1210px) {
@@ -412,12 +417,54 @@ form button {
     align-items: center;
   }
 
-  .box {}
+  .box {
+    margin: 30px 0;
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+
+  .home-link {
+    font-size: 1.4vw;
+  }
+
+  .call-btn {
+    font-size: 1.25vw;
+  }
+
+  .name-title {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home-link {
+    font-size: 1.5vw;
+  }
+
+  .call-btn {
+    font-size: 1.4vw;
+  }
+
+  .boxes-title {
+    font-size: 2.5vw;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .nav-li {
     padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .home-link {
+    font-size: 1.6vw;
+  }
+
+  .nav-li {
+    margin: 0px;
   }
 }
 
@@ -442,32 +489,28 @@ form button {
 }
 
 @media screen and (max-width: 600px) {
-  .boxes-container {
-    flex-direction: column;
-  }
-
-  .boxes-container {
-    align-items: center;
-  }
 
   .box h3 {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 
   .box p {
-    max-width: 35vw;
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
-
-  .box {
-    margin-top: 40px;
-  }
-
 }
 
 @media screen and (max-width: 530px) {
   .nav-li {
     padding: 0px 10px;
+    margin: 0px 5px;
+  }
+
+  .home-link {
+    font-size: 1.8vw;
+  }
+
+  .name-title {
+    font-size: 3vw;
   }
 }
 
@@ -477,7 +520,7 @@ form button {
   }
 
   .home-link {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
   }
 
   .name-title {
@@ -489,8 +532,7 @@ form button {
   }
 
   .box p {
-    max-width: 50vw;
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 
   .boxes-title {
@@ -498,14 +540,24 @@ form button {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 350px) {
+  .box h3 {
+    font-size: 4.5vw;
+  }
 
-  .name-title {
-    font-size: 4vw;
+  .box p {
+    font-size: 3.5vw;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
+
+  .name-title {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .nav-li-container {
     display: none;
     align-items: center;
