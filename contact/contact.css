@@ -514,43 +514,6 @@ form button {
   }
 }
 
-@media screen and (max-width: 450px) {
-  .call-btn {
-    font-size: 1.5vw;
-  }
-
-  .home-link {
-    font-size: 1.5vw;
-  }
-
-  .name-title {
-    margin-left: 3vw;
-    font-size: 25px;
-  }
-
-  .box h3 {
-    font-size: 18px;
-  }
-
-  .box p {
-    font-size: 15px;
-  }
-
-  .boxes-title {
-    font-size: 4vw;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .box h3 {
-    font-size: 16px;
-  }
-
-  .box p {
-    font-size: 14px;
-  }
-}
-
 @media screen and (max-width: 500px) {
   .nav-li-container {
     display: none;
@@ -609,5 +572,42 @@ form button {
 
   .nav-btn {
     margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .call-btn {
+    font-size: 1.5vw;
+  }
+
+  .home-link {
+    font-size: 1.5vw;
+  }
+
+  .name-title {
+    margin-left: 3vw;
+    font-size: 25px;
+  }
+
+  .box h3 {
+    font-size: 18px;
+  }
+
+  .box p {
+    font-size: 15px;
+  }
+
+  .boxes-title {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .box h3 {
+    font-size: 16px;
+  }
+
+  .box p {
+    font-size: 14px;
   }
 }
