@@ -525,14 +525,15 @@ form button {
 
   .name-title {
     margin-left: 3vw;
+    font-size: 25px;
   }
 
   .box h3 {
-    font-size: 4vw;
+    font-size: 18px;
   }
 
   .box p {
-    font-size: 3vw;
+    font-size: 15px;
   }
 
   .boxes-title {
@@ -542,18 +543,11 @@ form button {
 
 @media screen and (max-width: 350px) {
   .box h3 {
-    font-size: 4.5vw;
+    font-size: 16px;
   }
 
   .box p {
-    font-size: 3.5vw;
-  }
-}
-
-@media screen and (max-width: 500px) {
-
-  .name-title {
-    font-size: 3vw;
+    font-size: 14px;
   }
 }
 
@@ -570,6 +564,10 @@ form button {
   .call-btn {
     font-size: 2vw;
     margin-top: 10px;
+  }
+
+  .boxes-title {
+    font-size: 16px;
   }
 
   .hb-btn {
@@ -606,6 +604,7 @@ form button {
 
   .name-title {
     margin-right: auto;
+    font-size: 18px;
   }
 
   .nav-btn {
