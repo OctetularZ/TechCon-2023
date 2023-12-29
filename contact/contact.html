@@ -27,18 +27,23 @@
           style="color: #ffffff;"></i></button>
       <div class="nav-li-container" id="menu-dd">
         <!-- Exit Icon for certain widths for responsiveness -->
-        <button class="exit-btn" id="exit-menu"><i class="fa-solid fa-xmark fa-xl exit"
-            style="color: #ffffff;"></i></button>
-        <!-- List of navbar links for navigation -->
-        <li class="nav-li"><button class="home-btn"><a class="home-link"
-              href="../schedule/schedule.html">Schedule</a></button></li>
-        <li class="nav-li"><button class="home-btn"><a class="home-link"
-              href="../speakers/speakers.html">Speakers</a></button></li>
-        <li class="nav-li"><button class="home-btn"><a class="home-link"
-              href="../contact/contact.html">Contact</a></button></li>
-        <!-- Call to action button -->
-        <li class="nav-li"><a class="call-link" href="../register/register.html"><button
-              class="call-btn nav-btn">Register</button></a></li>
+        <div class="dropdown-items">
+          <a href="../index.html"><img class="dropdown-logo" src="../images/logo.png" /></a>
+          <button class="exit-btn" id="exit-menu"><i class="fa-solid fa-xmark fa-xl exit"
+              style="color: #ffffff;"></i></button>
+          <!-- List of navbar links for navigation -->
+          <div class="links">
+            <li class="nav-li"><button class="home-btn"><a class="home-link"
+                  href="../schedule/schedule.html">Schedule</a></button></li>
+            <li class="nav-li"><button class="home-btn"><a class="home-link"
+                  href="../speakers/speakers.html">Speakers</a></button></li>
+            <li class="nav-li"><button class="home-btn"><a class="home-link"
+                  href="../contact/contact.html">Contact</a></button></li>
+            <!-- Call to action button -->
+            <li class="nav-li"><a class="call-link" href="../register/register.html"><button
+                  class="call-btn nav-btn">Register</button></a></li>
+          </div>
+        </div>
       </div>
     </ul>
   </nav>

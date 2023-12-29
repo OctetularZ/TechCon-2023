@@ -237,6 +237,7 @@ body {
 
 .hb-btn {
   display: none;
+  font-size: 18px;
 }
 
 .exit {
@@ -246,6 +247,10 @@ body {
 .nav-li-container {
   display: flex;
   align-items: center;
+}
+
+.dropdown-logo {
+  display: none;
 }
 
 .boxes-title {
@@ -520,13 +525,21 @@ form button {
     align-items: center;
   }
 
+  .home-link::after {
+    width: 100%;
+  }
+
   .home-link {
-    font-size: 2.5vw;
+    font-size: 12px;
+  }
+
+  .links {
+    margin-top: 25px;
   }
 
   .call-btn {
-    font-size: 2vw;
-    margin-top: 10px;
+    font-size: 10px;
+    margin-top: 15px;
   }
 
   .boxes-title {
@@ -545,13 +558,31 @@ form button {
 
   .exit {
     display: contents;
-    padding: 20px;
+    justify-content: center;
+  }
+
+  .dropdown-logo {
+    display: block;
+    height: 45px;
+    width: 80px;
+    left: 0;
+    top: 0;
+    margin-top: 25px;
+    margin-left: 20px;
+    position: absolute;
+  }
+
+  .exit::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 35px;
+    margin-right: 30px;
   }
 
   .exit-btn {
     display: contents;
     background-color: transparent;
-    position: absolute;
   }
 
   .hb-btn-pressed {
@@ -559,10 +590,16 @@ form button {
     flex-direction: column;
     position: absolute;
     inset: 0;
-    padding-top: 35vh;
+    padding-top: 175px;
     background: #0a0f25;
     width: 100vw;
-    height: 100vh;
+    height: 150px;
+    animation: slideInFromTop 1s ease;
+  }
+
+  .dropdown-items {
+    margin-top: -120px;
+    align-items: center;
   }
 
   .name-title {
@@ -571,22 +608,14 @@ form button {
   }
 
   .nav-btn {
-    margin-left: 0px;
+    margin-left: -2px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .call-btn {
-    font-size: 1.5vw;
-  }
-
-  .home-link {
-    font-size: 1.5vw;
-  }
-
   .name-title {
     margin-left: 3vw;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .box h3 {
@@ -598,7 +627,7 @@ form button {
   }
 
   .boxes-title {
-    font-size: 4vw;
+    font-size: 18px;
   }
 }
 
