@@ -142,7 +142,7 @@ body {
   margin-right: auto;
   white-space: nowrap;
   margin-top: 1vh;
-  font-size: 2.3vw;
+  font-size: 30px;
   border-radius: 10px;
   padding: 5px 15px;
   transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
@@ -159,6 +159,11 @@ body {
   margin: 0px 10px;
   padding: 0px 30px;
   transition: 1s all ease;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
 }
 
 .home-btn {
@@ -178,10 +183,10 @@ body {
   background-color: white;
   border-radius: 10px;
   border-style: none;
-  font-size: 1vw;
-  padding: 0.8vw 1.3vw;
+  font-size: 16px;
+  padding: 10px 20px;
   margin-left: -10px;
-  margin-top: 5px;
+  margin-top: 1vh;
   color: black;
   font-family: lemon;
   transition: all 0.3s ease;
@@ -198,7 +203,7 @@ body {
 .home-link {
   text-decoration: none;
   color: #edeade;
-  font-size: 1vw;
+  font-size: 18px;
 }
 
 .call-link {
@@ -258,7 +263,7 @@ body {
   color: white;
   font-family: lemon;
   margin-top: 5%;
-  font-size: 2vw;
+  font-size: 28px;
   text-decoration: underline;
   text-align: center;
   animation: fadeIn 1s ease;
@@ -356,7 +361,7 @@ form {
 form h3 {
   color: #000;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 20px;
   font-family: lemon;
   text-align: center;
@@ -369,7 +374,7 @@ form textarea {
   padding: 20px;
   outline: none;
   background: #f5f5f5;
-  font-size: 16px;
+  font-size: 18px;
   font-family: Poppins;
 }
 
@@ -377,7 +382,7 @@ form button {
   padding: 15px;
   background: #ff4074;
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   border: 0;
   outline: none;
   cursor: pointer;
@@ -412,7 +417,7 @@ form button {
 
   .home-link,
   .call-btn {
-    font-size: 1.2vw;
+    font-size: 16px;
   }
 }
 
@@ -428,43 +433,39 @@ form button {
   }
 }
 
-@media screen and (max-width: 1150px) {
-
-  .home-link {
-    font-size: 1.4vw;
-  }
-
-  .call-btn {
-    font-size: 1.25vw;
-  }
-
-  .name-title {
-    font-size: 2.5vw;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .home-link {
-    font-size: 1.5vw;
-  }
-
-  .call-btn {
-    font-size: 1.4vw;
-  }
-
-  .boxes-title {
-    font-size: 2.5vw;
-  }
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1105px) {
   .nav-li {
+    margin: 0px 10px;
     padding: 0px 20px;
   }
 }
 
-@media screen and (max-width: 850px) {
-  .home-link {
+@media screen and (max-width: 1050px) {
+
+  .home-link,
+  .call-btn {
+    font-size: 15px;
+  }
+
+  .name-title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .boxes-title {
+    font-size: 25px;
+  }
+
+  .call-btn {
+    padding: 8px 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .home-link,
+  .call-btn {
     font-size: 1.6vw;
   }
 
@@ -523,6 +524,10 @@ form button {
   .nav-li-container {
     display: none;
     align-items: center;
+  }
+
+  .links {
+    flex-direction: column;
   }
 
   .home-link::after {
