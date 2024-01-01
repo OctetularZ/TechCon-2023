@@ -466,7 +466,27 @@ form button {
 
   .home-link,
   .call-btn {
-    font-size: 1.6vw;
+    font-size: 15px;
+  }
+
+  .nav-li {
+    margin: 0px;
+  }
+
+  .name-title {
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .home-link,
+  .call-btn {
+    font-size: 1.8vw;
+  }
+
+  .call-btn {
+    padding: 8px 10px;
   }
 
   .nav-li {
@@ -494,33 +514,8 @@ form button {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
-  .box h3 {
-    font-size: 3vw;
-  }
-
-  .box p {
-    font-size: 2.5vw;
-  }
-}
-
-@media screen and (max-width: 530px) {
-  .nav-li {
-    padding: 0px 10px;
-    margin: 0px 5px;
-  }
-
-  .home-link {
-    font-size: 1.8vw;
-  }
-
-  .name-title {
-    font-size: 3vw;
-  }
-}
-
-@media screen and (max-width: 500px) {
   .nav-li-container {
     display: none;
     align-items: center;
@@ -528,14 +523,16 @@ form button {
 
   .links {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .home-link,
+  .call-btn {
+    font-size: 14px;
   }
 
   .home-link::after {
     width: 100%;
-  }
-
-  .home-link {
-    font-size: 12px;
   }
 
   .links {
@@ -543,12 +540,7 @@ form button {
   }
 
   .call-btn {
-    font-size: 10px;
     margin-top: 15px;
-  }
-
-  .boxes-title {
-    font-size: 16px;
   }
 
   .hb-btn {
@@ -599,7 +591,7 @@ form button {
     background: #0a0f25;
     width: 100vw;
     height: 150px;
-    animation: slideInFromTop 1s ease;
+    animation: slideInFromTop 1s ease-out;
   }
 
   .dropdown-items {
@@ -607,38 +599,35 @@ form button {
     align-items: center;
   }
 
-  .name-title {
-    margin-right: auto;
-    font-size: 18px;
-  }
-
   .nav-btn {
-    margin-left: -2px;
+    margin-left: 0.6vw;
   }
 }
 
-@media screen and (max-width: 450px) {
-  .name-title {
-    margin-left: 3vw;
-    font-size: 20px;
-  }
+@media screen and (max-width: 600px) {
 
   .box h3 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .box p {
-    font-size: 15px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .name-title {
+    font-size: 22px;
   }
 
   .boxes-title {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 350px) {
   .box h3 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .box p {
