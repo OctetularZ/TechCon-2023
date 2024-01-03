@@ -703,6 +703,10 @@ html {
   }
 }
 
+@media screen and (max-width: 415px) {
+  /* Move hero stuff to the centre and make sure final call is centered at smaller screen widths */
+}
+
 @media screen and (max-width: 400px) {
   .conference-img {
     width: 300px;
