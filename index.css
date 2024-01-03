@@ -121,7 +121,6 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 50px;
 }
 
 .middle {
@@ -135,7 +134,6 @@ html {
 }
 
 .nav-options {
-  margin-top: -30px;
   text-decoration: none;
   list-style: none;
   display: flex;
@@ -655,6 +653,10 @@ html {
   .nav-btn {
     margin-left: 0.6vw;
   }
+
+  .hero-left {
+    max-width: 45vw;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -693,68 +695,11 @@ html {
     margin-top: -50px;
     opacity: 1 !important;
   }
-
-  .nav-options {
-    margin-top: -50px;
-  }
-
-  .hero-description {
-    font-size: 1.5vw;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .final-call button {
-    font-size: 1.5vw;
-  }
-
-  .call-btn {
-    font-size: 1.5vw;
-  }
-
-  .home-link {
-    font-size: 1.3vw;
-  }
-
-  .name-title {
-    margin-left: 3vw;
-  }
-
-  .hero-description {
-    font-size: 2vw;
-  }
-
-  .hero-title {
-    font-size: 3vw;
-  }
 }
 
 @media screen and (max-width: 425px) {
   .name-title {
     font-size: 22px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-
-  .name-title {
-    margin-right: auto;
-  }
-
-  .middle-text-container h3 {
-    font-size: 3vw;
-  }
-
-  .middle-text-container p {
-    font-size: 2vw;
-  }
-
-  .final-call h3 {
-    font-size: 2vw;
-  }
-
-  .nav-btn {
-    margin-left: 0px;
   }
 }
 
