@@ -271,9 +271,9 @@ html {
 }
 
 .hero-left {
-  margin-top: 20vh;
+  margin-top: 15vh;
   margin-left: 6vw;
-  max-width: 30vw;
+  max-width: 40vw;
   animation: slideInFromFarLeft 1s ease;
 }
 
@@ -646,7 +646,7 @@ html {
   }
 
   .dropdown-items {
-    margin-top: -120px;
+    margin-top: -130px;
     align-items: center;
   }
 
@@ -662,6 +662,12 @@ html {
 @media screen and (max-width: 650px) {
   .image-text-container {
     margin-top: 350px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .hero-left {
+    max-width: 60vw;
   }
 }
 
@@ -705,6 +711,25 @@ html {
 
 @media screen and (max-width: 415px) {
   /* Move hero stuff to the centre and make sure final call is centered at smaller screen widths */
+}
+
+@media screen and (max-width: 401px) {
+  .hero-left {
+    max-width: 80vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    margin-top: 15vh;
+  }
+
+  .hero-title {
+    text-align: center;
+  }
+
+  .hero-description {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 400px) {
