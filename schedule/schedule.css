@@ -150,7 +150,7 @@ body {
   margin-right: auto;
   white-space: nowrap;
   margin-top: 1vh;
-  font-size: 2.3vw;
+  font-size: 30px;
   border-radius: 10px;
   padding: 5px 15px;
   transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
@@ -167,6 +167,11 @@ body {
   margin: 0px 10px;
   padding: 0px 30px;
   transition: 1s all ease;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
 }
 
 .home-btn {
@@ -186,10 +191,10 @@ body {
   background-color: white;
   border-radius: 10px;
   border-style: none;
-  font-size: 1vw;
-  padding: 0.8vw 1.3vw;
+  font-size: 16px;
+  padding: 10px 20px;
   margin-left: -10px;
-  margin-top: 5px;
+  margin-top: 1vh;
   color: black;
   font-family: lemon;
   transition: all 0.3s ease;
@@ -206,7 +211,7 @@ body {
 .home-link {
   text-decoration: none;
   color: #edeade;
-  font-size: 1vw;
+  font-size: 18px;
 }
 
 .call-link {
@@ -245,6 +250,7 @@ body {
 
 .hb-btn {
   display: none;
+  font-size: 18px;
 }
 
 .exit {
@@ -254,6 +260,10 @@ body {
 .nav-li-container {
   display: flex;
   align-items: center;
+}
+
+.dropdown-logo {
+  display: none;
 }
 
 .logo {
@@ -345,9 +355,69 @@ input:focus {
 }
 
 /* Adding required screen size adaptations to allow the page to be responsive and adapt to all screen sizes */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1350px) {
+
+  .home-link,
+  .call-btn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1105px) {
   .nav-li {
+    margin: 0px 10px;
     padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+
+  .home-link,
+  .call-btn {
+    font-size: 15px;
+  }
+
+  .name-title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .call-btn {
+    padding: 8px 20px;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+
+  .home-link,
+  .call-btn {
+    font-size: 15px;
+  }
+
+  .nav-li {
+    margin: 0px;
+  }
+
+  .name-title {
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .home-link,
+  .call-btn {
+    font-size: 1.8vw;
+  }
+
+  .call-btn {
+    padding: 8px 10px;
+  }
+
+  .nav-li {
+    margin: 0px;
   }
 }
 
@@ -360,6 +430,96 @@ input:focus {
 
   .table-title {
     font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .nav-li-container {
+    display: none;
+    align-items: center;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-link,
+  .call-btn {
+    font-size: 14px;
+  }
+
+  .home-link::after {
+    width: 100%;
+  }
+
+  .links {
+    margin-top: 25px;
+  }
+
+  .call-btn {
+    margin-top: 15px;
+  }
+
+  .hb-btn {
+    background-color: transparent;
+    border-style: none;
+    display: contents;
+  }
+
+  .hamburger {
+    display: contents;
+  }
+
+  .exit {
+    display: contents;
+    justify-content: center;
+  }
+
+  .dropdown-logo {
+    display: block;
+    height: 45px;
+    width: 80px;
+    left: 0;
+    top: 0;
+    margin-top: 25px;
+    margin-left: 20px;
+    position: absolute;
+  }
+
+  .exit::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 35px;
+    margin-right: 30px;
+  }
+
+  .exit-btn {
+    display: contents;
+    background-color: transparent;
+  }
+
+  .hb-btn-pressed {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    inset: 0;
+    padding-top: 175px;
+    background: #0a0f25;
+    width: 100vw;
+    height: 150px;
+    animation: slideInFromTop 1s ease-out;
+  }
+
+  .dropdown-items {
+    margin-top: -130px;
+    align-items: center;
+  }
+
+  .nav-btn {
+    margin-left: 0.6vw;
   }
 }
 
@@ -376,82 +536,13 @@ input:focus {
 }
 
 @media screen and (max-width: 450px) {
-  .call-btn {
-    font-size: 1.5vw;
-  }
-
-  .home-link {
-    font-size: 1.3vw;
-  }
-
-  .name-title {
-    margin-left: 3vw;
-  }
-
   .table-title {
     font-size: 3.5vw;
   }
 }
 
-@media screen and (max-width: 400px) {
-
+@media screen and (max-width: 425px) {
   .name-title {
-    font-size: 4vw;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .nav-li-container {
-    display: none;
-    align-items: center;
-  }
-
-  .home-link {
-    font-size: 2.5vw;
-  }
-
-  .call-btn {
-    font-size: 2vw;
-    margin-top: 10px;
-  }
-
-  .hb-btn {
-    background-color: transparent;
-    border-style: none;
-    display: contents;
-  }
-
-  .hamburger {
-    display: contents;
-  }
-
-  .exit {
-    display: contents;
-    padding: 20px;
-  }
-
-  .exit-btn {
-    display: contents;
-    background-color: transparent;
-    position: absolute;
-  }
-
-  .hb-btn-pressed {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    inset: 0;
-    padding-top: 35vh;
-    background: #0a0f25;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .name-title {
-    margin-right: auto;
-  }
-
-  .nav-btn {
-    margin-left: 0px;
+    font-size: 22px;
   }
 }
