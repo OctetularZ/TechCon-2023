@@ -277,7 +277,7 @@ body {
 .table-title {
   color: white;
   font-family: lemon;
-  font-size: 2vw;
+  font-size: 28px;
   text-decoration: underline;
   animation: fadeIn 1.5s ease;
 }
@@ -302,7 +302,7 @@ td {
   text-align: left;
   padding: 7px 10px;
   text-transform: capitalize;
-  font-size: 1.2vw;
+  font-size: 18px;
 }
 
 th {
@@ -340,12 +340,14 @@ tr:nth-child(even)+td {
   background-color: #090e24;
   border-radius: 10px;
   color: white;
+  font-size: 18px;
   transition: all 0.3s ease;
   animation: fadeIn 1.5s ease;
 }
 
 ::placeholder {
   color: white;
+  font-size: 18px;
   opacity: 0.8;
 }
 
@@ -425,13 +427,15 @@ input:focus {
 
   th,
   td {
-    font-size: 1.5vw;
+    font-size: 16px;
   }
 
   .table-title {
-    font-size: 3vw;
+    font-size: 25px;
   }
 }
+
+/* Take some columns of the table (day and maybe speaker if need be) to only keep crucial info. */
 
 @media screen and (max-width: 700px) {
 
