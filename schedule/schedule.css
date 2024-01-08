@@ -286,7 +286,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  padding-bottom: 50vh;
+  padding-bottom: 25vh;
   animation: slideInFromBottom 1s ease;
   max-width: 80%;
 }
@@ -354,6 +354,10 @@ tr:nth-child(even)+td {
 input:focus {
   outline: none !important;
   box-shadow: 0px 0px 5px 5px #213363;
+}
+
+.table-helper {
+  display: none;
 }
 
 /* Adding required screen size adaptations to allow the page to be responsive and adapt to all screen sizes */
@@ -424,18 +428,28 @@ input:focus {
 }
 
 @media screen and (max-width: 720px) {
-
-  th,
-  td {
-    font-size: 16px;
-  }
-
   .table-title {
     font-size: 25px;
   }
+
+  tr th:nth-child(4),
+  tr td:nth-child(4) {
+
+    display: none;
+  }
+
+  .table-helper {
+    display: flex;
+    padding-bottom: 25vh;
+    color: #edeade;
+    font-family: poppins;
+    font-size: 16px;
+    animation: slideInFromBottom 1s ease;
+    opacity: 0.6;
+  }
 }
 
-/* Take some columns of the table (day and maybe speaker if need be) to only keep crucial info. */
+/* Take some columns off the table (day and maybe speaker if need be) to only keep crucial info. */
 
 @media screen and (max-width: 700px) {
 
@@ -527,26 +541,52 @@ input:focus {
   }
 }
 
-@media screen and (max-width: 530px) {
-  .nav-li {
-    padding: 0px 10px;
+@media screen and (max-width: 600px) {
+  .table-title {
+    font-size: 25px;
   }
 
-  th,
-  td {
-    padding: 4px 7px;
-    font-size: 2vw;
+  tr th:nth-child(2),
+  tr td:nth-child(2) {
+
+    display: none;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .table-title {
-    font-size: 3.5vw;
+    font-size: 22px;
+  }
+
+  td,
+  th {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .nav-li {
+    padding: 0px 10px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .name-title {
     font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  td,
+  th {
+    font-size: 14px;
+    padding: 3px 6px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .table-title {
+    font-size: 20px;
   }
 }
