@@ -85,6 +85,16 @@
   }
 }
 
+@keyframes slideInFromFarBottom {
+  0% {
+    transform: translateY(500%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes levitate {
   0% {
     transform: translateY(0) rotate(90deg);
@@ -279,6 +289,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 5px;
+  animation: slideInFromFarBottom 1s ease;
 }
 
 .caret-down {
@@ -332,30 +343,6 @@ section {
   border: 2px solid white;
 }
 
-.img-3 {
-  width: 650px;
-  height: 350px;
-  border-radius: 25px;
-  box-shadow: 0px 0px 20px 0px black;
-  border: 2px solid white;
-}
-
-.img-4 {
-  width: 650px;
-  height: 350px;
-  border-radius: 25px;
-  box-shadow: 0px 0px 20px 0px black;
-  border: 2px solid white;
-}
-
-.img-5 {
-  width: 650px;
-  height: 400px;
-  border-radius: 25px;
-  box-shadow: 0px 0px 20px 0px black;
-  border: 2px solid white;
-}
-
 .content {
   position: relative;
   text-align: center;
@@ -389,35 +376,30 @@ section {
   .img-1 {
     width: 600px;
     height: 300px;
-    border-radius: 25px;
-    box-shadow: 0px 0px 20px 0px black;
-    border: 2px solid white;
   }
 
   .img-2 {
     width: 600px;
     height: 350px;
-    border-radius: 25px;
-    box-shadow: 0px 0px 20px 0px black;
-    border: 2px solid white;
   }
 }
 
-@media screen and (max-width: 1140px) {
-  .img-1 {
-    width: 450px;
-    height: 250px;
-    border-radius: 25px;
-    box-shadow: 0px 0px 20px 0px black;
-    border: 2px solid white;
+@media screen and (max-width: 1200px) {
+  .inner {
+    flex-direction: column;
   }
 
-  .img-2 {
-    width: 450px;
-    height: 300px;
-    border-radius: 25px;
-    box-shadow: 0px 0px 20px 0px black;
-    border: 2px solid white;
+  .content {
+    max-width: 80vw;
+    margin-bottom: 20px;
+  }
+
+  .inner h1 {
+    margin-bottom: 10px;
+  }
+
+  .image-text-container-3 {
+    flex-direction: column;
   }
 }
 
@@ -444,33 +426,9 @@ section {
   .call-btn {
     padding: 8px 20px;
   }
-
-  .inner {
-    flex-direction: column;
-  }
-
-  .content {
-    max-width: 80vw;
-    margin-bottom: 20px;
-  }
-
-  .inner h1 {
-    margin-bottom: 10px;
-  }
-
-  .image-text-container-3 {
-    flex-direction: column;
-  }
 }
 
 @media screen and (max-width: 900px) {
-  .inner p {
-    font-size: 1.5vw;
-  }
-
-  .inner h1 {
-    font-size: 2.5vw;
-  }
 
   .home-link,
   .call-btn {
@@ -503,6 +461,16 @@ section {
 
   .hero-title {
     font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .inner p {
+    font-size: 17px;
+  }
+
+  .content {
+    width: 100vw;
   }
 }
 
@@ -597,28 +565,15 @@ section {
 }
 
 @media screen and (max-width: 650px) {
-  .inner p {
-    font-size: 2vw;
-  }
-
-  .inner h1 {
-    font-size: 2.5vw;
-  }
 
   .img-1 {
-    width: 350px;
-    height: 150px;
-    border-radius: 25px;
-    box-shadow: 0px 0px 20px 0px black;
-    border: 2px solid white;
+    width: 450px;
+    height: 250px;
   }
 
   .img-2 {
     width: 450px;
-    height: 300px;
-    border-radius: 25px;
-    box-shadow: 0px 0px 20px 0px black;
-    border: 2px solid white;
+    height: 280px;
   }
 }
 
@@ -630,32 +585,38 @@ section {
 
 @media screen and (max-width: 500px) {
   .img-1 {
-    width: 250px;
-    height: 140px;
+    width: 350px;
+    height: 200px;
   }
 
   .img-2 {
-    width: 250px;
-    height: 180px;
+    width: 350px;
+    height: 240px;
   }
 
   section {
     margin-top: 200px;
   }
-}
 
-@media screen and (max-width: 450px) {
   .inner p {
-    font-size: 2vw;
-  }
-
-  .content {
-    width: 80vw;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .name-title {
     font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .img-1 {
+    width: 300px;
+    height: 160px;
+  }
+
+  .img-2 {
+    width: 300px;
+    height: 180px;
   }
 }

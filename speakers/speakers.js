@@ -19,7 +19,7 @@ let image_slider = gsap.timeline({
   scrollTrigger: {
     trigger: '.section-one',
     start: '-90% 70%',
-    end: '620% 40%',
+    end: '500% 40%',
     toggleActions: 'restart restart none none',
     scrub: true
   }
