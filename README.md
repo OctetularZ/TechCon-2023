@@ -1,5 +1,7 @@
 # 🎨 Tech Con 2023 – Interactive Conference Website
 🔗 [Website Link](https://tech-con.netlify.app/)
+
+
 ![Homepage Screenshot](./assets/tech-con-2023-homepage.gif)
 
 **Technologies:** `HTML`, `CSS`, `JavaScript`, `GSAP`, `Lenis`, `jQuery`
