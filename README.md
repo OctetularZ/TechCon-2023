@@ -8,7 +8,7 @@
 
 ---
 
-Designed and developed a **modern, interactive website** for a fictional tech conference as part of a university coursework project. The focus was on delivering:
+Designed and developed a **modern, interactive website** for a fictional tech conference. The focus was on delivering:
 
 - ✅ A smooth **user experience**
 - 🎯 Strong **visual appeal**
