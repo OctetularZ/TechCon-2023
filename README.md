@@ -1,4 +1,4 @@
-# 🎨 Tech Con 2023 – Interactive Concept Conference Website
+# 💻 Tech Con 2023 – Interactive Concept Conference Website
 🔗 [Website Link](https://tech-con.netlify.app/)
 
 
